@@ -1,0 +1,4 @@
+interface:
+  display_name: "Integrate 11reports Workflow"
+  short_description: "Connect report workflows to 11reports publishing"
+  default_prompt: "Use $11reports-integrate-workflow to connect this report workflow to 11reports."

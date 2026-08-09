@@ -3,13 +3,30 @@
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "packageManager": "npm@11.13.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "bin": {
+    "11reports": "./scripts/11reports.mjs"
+  },
   "scripts": {
+    "predev": "npm run reports:generate",
     "dev": "next dev",
+    "prebuild": "npm run reports:generate",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
-    "typecheck": "tsc --noEmit"
+    "pretypecheck": "npm run reports:generate",
+    "typecheck": "tsc --noEmit",
+    "reports:generate": "node scripts/generate-report-index.mjs",
+    "reports:validate": "node scripts/11reports.mjs validate",
+    "reports:import": "node scripts/11reports.mjs import",
+    "reports:publish": "node scripts/11reports.mjs publish",
+    "reports:verify": "node scripts/11reports.mjs verify",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node --test tests/*.e2e.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -22,11 +39,12 @@
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^1.24.0",
-    "next": "16.2.6",
+    "next": "^16.3.0",
     "next-themes": "^0.4.6",
     "react": "19.2.4",
     "react-day-picker": "^10.0.1",
     "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
     "react-resizable-panels": "^4.12.2",
     "recharts": "^3.8.0",
     "shadcn": "^4.13.0",
@@ -40,7 +58,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "^16.3.0",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4",

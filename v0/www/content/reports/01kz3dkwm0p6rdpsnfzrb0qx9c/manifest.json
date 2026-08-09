@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "01kz3dkwm0p6rdpsnfzrb0qx9c",
+  "slug": "cybersecurity-report",
+  "title": "The 10 Biggest Cybersecurity Stories Right Now",
+  "summary": "Ten major cybersecurity stories and why they matter, compiled August 3, 2026.",
+  "createdAt": "2026-08-03T09:00:00.000Z",
+  "tags": [
+    "cybersecurity",
+    "weekly"
+  ],
+  "source": {
+    "workflow": "archive-import",
+    "originalPath": "Cybersecurity Report"
+  },
+  "generator": {
+    "agent": "11reports",
+    "skill": "11reports-import-reports"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "markdown": {
+      "path": "cybersecurity-report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 11285,
+      "sha256": "sha256:b72f280562001dfeafc44acec3942afe7491d0bbe56388b632901fe56d494f43",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "cybersecurity-report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 14236,
+      "sha256": "sha256:40bf6a0b391c4b623a6e320cf4f99b8d62840f319d8f362f6f550186dccea3f6",
+      "exposure": "sandbox",
+      "execution": "static",
+      "network": "allowlist",
+      "allowlist": [
+        "https://cdnjs.cloudflare.com"
+      ]
+    }
+  },
+  "digest": "sha256:cd199531ac4e205a8d612295fef4ff0956c73dbcdaa3467e1a48da28e23e859f"
+}

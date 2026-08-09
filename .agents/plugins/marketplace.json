@@ -1,0 +1,20 @@
+{
+  "name": "11reports",
+  "interface": {
+    "displayName": "11reports"
+  },
+  "plugins": [
+    {
+      "name": "11reports",
+      "source": {
+        "source": "local",
+        "path": "./v0/plugins/11reports"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

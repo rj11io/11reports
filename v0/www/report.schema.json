@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reports.rj11.io/report.schema.json",
+  "title": "11reports report bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "slug",
+    "title",
+    "summary",
+    "createdAt",
+    "tags",
+    "source",
+    "generator",
+    "access",
+    "artifacts",
+    "digest"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9a-hjkmnp-tv-z]{26}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 100
+    },
+    "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "tags": {
+      "type": "array",
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workflow"],
+      "properties": {
+        "project": { "type": "string", "maxLength": 100 },
+        "commit": { "type": "string", "maxLength": 64 },
+        "workflow": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "originalPath": { "type": "string", "maxLength": 255 }
+      }
+    },
+    "generator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent", "skill"],
+      "properties": {
+        "agent": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "skill": { "type": "string", "minLength": 1, "maxLength": 100 }
+      }
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["listing", "indexing"],
+      "properties": {
+        "listing": { "enum": ["listed", "unlisted"] },
+        "indexing": { "type": "boolean" }
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "data": { "$ref": "#/$defs/dataArtifact" },
+        "markdown": { "$ref": "#/$defs/markdownArtifact" },
+        "html": { "$ref": "#/$defs/htmlArtifact" }
+      }
+    },
+    "digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+  },
+  "$defs": {
+    "artifactBase": {
+      "type": "object",
+      "required": ["path", "exposure", "mimeType", "bytes", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "exposure": { "type": "string" },
+        "mimeType": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "sha256": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" }
+      }
+    },
+    "dataArtifact": {
+      "allOf": [
+        { "$ref": "#/$defs/artifactBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {},
+            "exposure": {
+              "enum": ["hidden", "view", "download", "view-download"]
+            },
+            "mimeType": {},
+            "bytes": {},
+            "sha256": {}
+          }
+        }
+      ]
+    },
+    "markdownArtifact": {
+      "allOf": [
+        { "$ref": "#/$defs/artifactBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {},
+            "exposure": { "enum": ["hidden", "source", "render"] },
+            "mimeType": {},
+            "bytes": {},
+            "sha256": {}
+          }
+        }
+      ]
+    },
+    "htmlArtifact": {
+      "allOf": [
+        { "$ref": "#/$defs/artifactBase" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["execution", "network", "allowlist"],
+          "properties": {
+            "path": {},
+            "exposure": { "enum": ["archive", "sandbox"] },
+            "mimeType": {},
+            "bytes": {},
+            "sha256": {},
+            "execution": { "enum": ["static", "scripts"] },
+            "network": { "enum": ["none", "allowlist"] },
+            "allowlist": {
+              "type": "array",
+              "uniqueItems": true,
+              "maxItems": 20,
+              "items": { "type": "string", "format": "uri" }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

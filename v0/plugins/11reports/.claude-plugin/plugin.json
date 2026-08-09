@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "11reports",
+  "version": "0.1.0",
+  "description": "Archive, publish, deploy, and verify agent-produced reports as isolated HTML with stable share links.",
+  "author": { "name": "rj11io" },
+  "repository": "https://github.com/rj11io/11reports",
+  "homepage": "https://reports.rj11.io",
+  "skills": "./skills/",
+  "keywords": ["reports", "archive", "publishing", "vercel", "html", "agents"]
+}

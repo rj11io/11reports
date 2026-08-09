@@ -7,17 +7,33 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const fontMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
-  title: "Under Maintenance",
+  metadataBase: new URL("https://reports.rj11.io"),
+  title: {
+    default: "11reports",
+    template: "%s · 11reports",
+  },
   description:
-    "This website is currently under maintenance and will be back online soon.",
+    "A durable archive for agent-produced reports and their source artifacts.",
+  openGraph: {
+    type: "website",
+    siteName: "11reports",
+    title: "11reports",
+    description:
+      "Reports worth keeping. Original HTML, source artifacts, one stable link.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1731,
+        height: 909,
+        alt: "11reports. Reports worth keeping.",
+      },
+    ],
+  },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 }
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
 
 export default function RootLayout({
   children,
@@ -28,12 +44,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn(
-        "antialiased",
-        fontMono.variable,
-        "font-sans",
-        inter.variable
-      )}
+      className={cn("font-sans antialiased", inter.variable, fontMono.variable)}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>

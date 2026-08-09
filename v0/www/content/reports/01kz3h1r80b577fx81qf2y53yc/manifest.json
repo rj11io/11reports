@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "01kz3h1r80b577fx81qf2y53yc",
+  "slug": "cybersecurity-hot-stories-2026-08-03",
+  "title": "10 Hottest Cybersecurity Stories — August 3, 2026",
+  "summary": "A focused briefing on the hottest cybersecurity stories from July and early August 2026.",
+  "createdAt": "2026-08-03T10:00:00.000Z",
+  "tags": [
+    "cybersecurity",
+    "briefing"
+  ],
+  "source": {
+    "workflow": "archive-import",
+    "originalPath": "cybersecurity-hot-stories-2026-08-03"
+  },
+  "generator": {
+    "agent": "11reports",
+    "skill": "11reports-import-reports"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "markdown": {
+      "path": "cybersecurity-hot-stories-2026-08-03.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 14043,
+      "sha256": "sha256:cab00173dae89230064bcf87c4146c4b59a6d635d504358e8c287dd90a5dc8be",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "cybersecurity-hot-stories-2026-08-03.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 17552,
+      "sha256": "sha256:3ed1d088689407fb9ef664e167300b2149f74726e67e4738cb22604f77eb9a6f",
+      "exposure": "sandbox",
+      "execution": "static",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:07bcc4332e27e721b51bd89b98dc5b32608c40e198a43fa7b97c130515502b87"
+}

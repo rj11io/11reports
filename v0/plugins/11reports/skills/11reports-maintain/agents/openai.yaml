@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain 11reports"
+  short_description: "Validate and maintain the 11reports archive"
+  default_prompt: "Use $11reports-maintain to check and maintain the 11reports archive."

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "01kz3mfkw0h09a3dbwjmf3vn0p",
+  "slug": "startup-stories-report-2026-08-03",
+  "title": "10 Hottest Startup Stories — August 3, 2026",
+  "summary": "Ten high-impact startup and venture stories ranked by capital, traction, and market signal.",
+  "createdAt": "2026-08-03T11:00:00.000Z",
+  "tags": [
+    "startups",
+    "venture-capital"
+  ],
+  "source": {
+    "workflow": "archive-import",
+    "originalPath": "Startup Stories Report - 2026-08-03"
+  },
+  "generator": {
+    "agent": "11reports",
+    "skill": "11reports-import-reports"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "markdown": {
+      "path": "startup-stories-2026-08-03.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 13508,
+      "sha256": "sha256:4212bbd5e327903d9e3840c3f0a4820d2d7d8ab6df2a280dc5c0330a368ac264",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "startup-stories-2026-08-03.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 17250,
+      "sha256": "sha256:9130238bd49ac198e6dfeaf871989bff3cd682563020c2004456f9f58d29c1b5",
+      "exposure": "sandbox",
+      "execution": "static",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:e6e1a2d1f60462ed5a601042a5683ca4715a209ea33b602e60ad416feb434596"
+}

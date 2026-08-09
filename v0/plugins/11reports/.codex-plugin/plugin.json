@@ -1,0 +1,26 @@
+{
+  "name": "11reports",
+  "version": "0.1.0",
+  "description": "Archive, publish, deploy, and verify agent-produced reports as isolated HTML with stable share links.",
+  "author": {
+    "name": "rj11io"
+  },
+  "repository": "https://github.com/rj11io/11reports",
+  "homepage": "https://reports.rj11.io",
+  "keywords": ["reports", "archive", "publishing", "vercel", "html", "agents"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "11reports",
+    "shortDescription": "Archive and deploy agent-produced reports.",
+    "longDescription": "Validate report bundles, archive immutable source artifacts, publish through Git and Vercel, and return a verified per-report URL.",
+    "developerName": "rj11io",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Developer Tools"],
+    "websiteURL": "https://reports.rj11.io",
+    "defaultPrompt": [
+      "Publish this report and return its verified URL.",
+      "Connect this report workflow to 11reports.",
+      "Validate the complete 11reports archive."
+    ]
+  }
+}

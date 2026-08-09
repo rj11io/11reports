@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 10 Hottest Startup Stories — August 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nobs-white:#FFFFFF;
+  --nobs-blue:#3266FF;
+  --nobs-dark-blue:#181838;
+  --nobs-light-blue:#60C7FF;
+  --nobs-support-1:#00237D;
+  --nobs-support-3:#58A9F7;
+  --nobs-yellow:#FECE00;
+  --font-heading:'Prompt',sans-serif;
+  --font-body:'Roboto',sans-serif;
+  --space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;--space-6:48px;--space-8:64px;
+  --rule:#E4E7F2;
+  --muted:#5A5F7D;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--nobs-white);color:var(--nobs-dark-blue);
+  font-family:var(--font-body);font-weight:400;font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 var(--space-4)}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--nobs-dark-blue);color:var(--nobs-white);padding:var(--space-8) 0 var(--space-8)}
+.hero .wrap{display:block}
+.brandrow{display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6)}
+.mark{
+  width:46px;height:46px;flex:0 0 46px;background:var(--nobs-blue);
+  border-radius:10px;position:relative;
+}
+.mark::after{content:"";position:absolute;left:9px;bottom:-6px;width:0;height:0;
+  border-left:8px solid var(--nobs-blue);border-bottom:7px solid transparent}
+.mark span{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-heading);font-weight:900;font-size:15px;color:#fff;letter-spacing:-.5px;line-height:1;
+}
+.brandname{font-family:var(--font-heading);font-weight:700;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--nobs-light-blue)}
+h1{
+  font-family:var(--font-heading);font-weight:900;
+  font-size:clamp(38px,6.2vw,68px);line-height:1.02;letter-spacing:-1.5px;
+  margin:0 0 var(--space-3);max-width:15ch;
+}
+h1 em{font-style:normal;color:var(--nobs-light-blue)}
+.hero .meta{font-size:15px;color:#A7AFCE;letter-spacing:.3px}
+.hero .meta strong{color:var(--nobs-white);font-weight:500}
+
+/* ---------- STAT BAND ---------- */
+.stats{background:var(--nobs-blue);color:var(--nobs-white)}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);padding:var(--space-6) 0}
+.stat .n{font-family:var(--font-heading);font-weight:900;font-size:clamp(30px,4vw,46px);line-height:1;letter-spacing:-1px}
+.stat .l{font-size:13px;line-height:1.4;margin-top:var(--space-1);color:#DCE5FF}
+@media(max-width:760px){.stats .grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- SUMMARY ---------- */
+section{padding:var(--space-8) 0}
+.eyebrow{
+  font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--nobs-blue);margin:0 0 var(--space-2);
+}
+h2{font-family:var(--font-heading);font-weight:700;font-size:clamp(26px,3.4vw,34px);line-height:1.15;letter-spacing:-.6px;margin:0 0 var(--space-3)}
+p{margin:0 0 var(--space-3);max-width:70ch}
+.lead{font-size:20px;line-height:1.6}
+strong{font-weight:500;color:var(--nobs-dark-blue)}
+.summary strong{box-shadow:inset 0 -.55em 0 rgba(254,206,0,.35)}
+
+ol.spine{list-style:none;counter-reset:s;margin:var(--space-4) 0 0;padding:0}
+ol.spine li{counter-increment:s;position:relative;padding-left:52px;margin-bottom:var(--space-3);max-width:70ch}
+ol.spine li::before{
+  content:counter(s);position:absolute;left:0;top:1px;
+  width:32px;height:32px;border-radius:50%;background:var(--nobs-dark-blue);color:#fff;
+  font-family:var(--font-heading);font-weight:700;font-size:15px;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ---------- STORIES ---------- */
+.stories{border-top:1px solid var(--rule)}
+article{padding:var(--space-6) 0;border-bottom:1px solid var(--rule)}
+article:last-of-type{border-bottom:0}
+.rank{
+  font-family:var(--font-heading);font-weight:900;font-size:13px;letter-spacing:2px;
+  color:var(--nobs-blue);display:block;margin-bottom:var(--space-1);
+}
+article h3{
+  font-family:var(--font-heading);font-weight:700;font-size:clamp(21px,2.6vw,27px);
+  line-height:1.2;letter-spacing:-.4px;margin:0 0 var(--space-3);max-width:34ch;
+}
+.tag{
+  display:inline-block;font-family:var(--font-body);font-weight:500;font-size:11px;
+  letter-spacing:1.2px;text-transform:uppercase;color:var(--nobs-support-1);
+  background:#EDF1FF;padding:5px 10px;border-radius:3px;margin:0 var(--space-1) var(--space-3) 0;
+}
+.block{margin-bottom:var(--space-3);max-width:70ch}
+.block .k{
+  font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:1.8px;
+  text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px;
+}
+.why{border-left:3px solid var(--nobs-blue);padding-left:var(--space-3)}
+.refs{margin-top:var(--space-3)}
+.refs .k{font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px}
+.refs ul{margin:0;padding:0;list-style:none}
+.refs li{margin-bottom:6px;font-size:15px;padding-left:16px;position:relative}
+.refs li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--nobs-yellow);border-radius:50%}
+a{color:var(--nobs-blue);text-decoration:none;border-bottom:1px solid rgba(50,102,255,.3)}
+a:hover{border-bottom-color:var(--nobs-blue);background:rgba(50,102,255,.06)}
+
+/* ---------- TABLE ---------- */
+.tablewrap{overflow-x:auto;margin-top:var(--space-4)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:620px}
+th{
+  font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:1.5px;
+  text-transform:uppercase;text-align:left;color:var(--nobs-white);background:var(--nobs-dark-blue);
+  padding:12px var(--space-2);
+}
+td{padding:12px var(--space-2);border-bottom:1px solid var(--rule);vertical-align:top}
+tbody tr:nth-child(even){background:#F7F9FF}
+td.amt{font-family:var(--font-heading);font-weight:700;color:var(--nobs-blue);white-space:nowrap}
+td.dt{color:var(--muted);white-space:nowrap}
+
+/* ---------- TAKEAWAYS ---------- */
+.takeaways{background:var(--nobs-dark-blue);color:var(--nobs-white)}
+.takeaways h2{color:var(--nobs-white)}
+.takeaways .eyebrow{color:var(--nobs-light-blue)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-4)}
+.card{border-top:3px solid var(--nobs-light-blue);padding-top:var(--space-3)}
+.card h4{font-family:var(--font-heading);font-weight:700;font-size:19px;line-height:1.25;margin:0 0 var(--space-2)}
+.card p{font-size:15px;color:#C3CBE8;margin:0;max-width:none}
+@media(max-width:760px){.cards{grid-template-columns:1fr}}
+
+/* ---------- FOOTER ---------- */
+footer{padding:var(--space-6) 0;border-top:1px solid var(--rule)}
+footer p{font-size:13px;color:var(--muted);max-width:80ch;margin:0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="mark"><span>NO<br>BS!</span></div>
+      <div class="brandname">NO BS! Ventures</div>
+    </div>
+    <h1>The 10 hottest <em>startup stories</em></h1>
+    <p class="meta"><strong>As of 3 August 2026</strong> &nbsp;·&nbsp; Market intelligence brief &nbsp;·&nbsp; 10 stories, 30 sources</p>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap grid">
+    <div class="stat"><div class="n">$392B</div><div class="l">Raised in the US &amp; Canada in H1 2026 — an all-time record</div></div>
+    <div class="stat"><div class="n">80%</div><div class="l">Of Q2 money went to AI companies</div></div>
+    <div class="stat"><div class="n">&minus;15%</div><div class="l">Seed funding, quarter over quarter</div></div>
+    <div class="stat"><div class="n">88%</div><div class="l">Of global AI funding went to US companies</div></div>
+  </div>
+</div>
+
+<section class="summary">
+  <div class="wrap">
+    <p class="eyebrow">The short version</p>
+    <h2>Record year, narrower base</h2>
+    <p class="lead">The first half of 2026 broke every record startup investors track. But the totals went up because a handful of giant deals got giant — not because more startups got funded.</p>
+    <p>Deal counts stayed low. Seed funding — the earliest money a new company raises — actually <strong>fell 15%</strong> quarter over quarter. Meanwhile the US now captures close to <strong>88% of every AI dollar raised worldwide</strong>, with two companies, OpenAI and Anthropic, taking most of it.</p>
+    <p>Three stories define the period:</p>
+    <ol class="spine">
+      <li><strong>SpaceX went public</strong> in the largest stock market debut ever, raising $75 billion.</li>
+      <li><strong>SpaceX then spent $60 billion buying Cursor</strong>, the AI coding company — the biggest startup acquisition in history.</li>
+      <li><strong>Anthropic overtook OpenAI</strong> as the most valuable private company in the world, at a $965 billion valuation.</li>
+    </ol>
+    <p style="margin-top:var(--space-4)">Under those headlines, the money moved into things you can touch: chips, power plants, factory robots, and the electricity to run data centres. That shift — from software models to physical infrastructure — is the clearest pattern of the last six months.</p>
+  </div>
+</section>
+
+<div class="stories">
+<div class="wrap">
+
+  <article>
+    <span class="rank">Story 01</span>
+    <h3>SpaceX's IPO becomes the largest ever</h3>
+    <span class="tag">Public markets</span><span class="tag">$75B raised</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>SpaceX priced its shares at $135 and raised <strong>$75 billion</strong> in its Nasdaq debut on 11 June 2026 — the biggest initial public offering in history. An IPO is the moment a private company first sells shares to the public. The stock rose about <strong>19% on its first day</strong> of trading, under the ticker SPCX. Reported valuations around the listing ran to roughly $1.75 trillion.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>For years the standing joke in venture capital was that the best companies never go public. SpaceX just proved a private company can reach public markets at enormous scale and be met with demand, not scepticism. It also handed SpaceX something more useful than cash: publicly traded stock it could immediately spend on acquisitions — see story 02. Every late-stage founder now has a live comparison for what staying private actually costs.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://www.cnbc.com/2026/06/11/spacex-raises-75-billion-in-record-setting-ipo-ahead-of-nasdaq-debut.html">SpaceX raises $75 billion in record-setting IPO ahead of Nasdaq debut — CNBC</a></li>
+        <li><a href="https://techcrunch.com/2026/06/11/spacex-officially-prices-shares-at-135-in-the-largest-ipo-ever/">SpaceX officially prices shares at $135 in the largest IPO ever — TechCrunch</a></li>
+        <li><a href="https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk">SpaceX blasts off with a record-breaking $75 billion IPO — NPR</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 02</span>
+    <h3>SpaceX buys Cursor for $60 billion — the biggest startup acquisition ever</h3>
+    <span class="tag">M&amp;A record</span><span class="tag">All stock</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>Five days after its IPO, on 16 June 2026, SpaceX agreed to buy <strong>Anysphere</strong>, the company behind the AI coding tool Cursor, for <strong>$60 billion in stock</strong> — no cash. The deal is expected to close in Q3 2026. SpaceX had locked in an exclusive option in April, with a $10 billion penalty if it walked away and $4 billion if regulators blocked the deal. Cursor was founded in 2022 and had reached about <strong>$3 billion in annual revenue</strong> by late April; weeks before the acquisition it had been raising at a $50 billion valuation.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>This is the largest amount ever paid for a startup, and it completes a full stack under one owner. SpaceX already holds xAI, bought in February 2026, and runs the Colossus supercomputer — so it now controls chips, training infrastructure, frontier AI models, and the application millions of developers open every day. It also removes the most obvious independent challenger to Anthropic's Claude and OpenAI's coding tools. Watch two risks: antitrust review, and whether developers stay loyal to a tool now owned by a rocket company.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://www.forbes.com/sites/sandycarter/2026/06/16/spacex-buys-cursor-in-largest-startup-acquisition-ever-at-60-billion/">SpaceX buys Cursor in largest startup acquisition ever at $60 billion — Forbes</a></li>
+        <li><a href="https://devops.com/spacex-to-acquire-ai-coding-leader-cursor-in-60-billion-blockbuster-deal/">SpaceX to acquire AI coding leader Cursor in $60 billion blockbuster deal — DevOps.com</a></li>
+        <li><a href="https://www.ghacks.net/2026/06/17/spacex-acquires-ai-coding-startup-anysphere-maker-of-cursor-in-60-billion-all-stock-deal/">SpaceX acquires Anysphere, maker of Cursor, in $60 billion all-stock deal — gHacks</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 03</span>
+    <h3>Anthropic raises $65 billion and passes OpenAI</h3>
+    <span class="tag">$965B valuation</span><span class="tag">Series H</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>On 28 May 2026 Anthropic closed a <strong>$65 billion Series H at a $965 billion valuation</strong>, knocking OpenAI off the top of the private-company rankings. Altimeter Capital, Dragoneer, Greenoaks and Sequoia Capital led, with Capital Group, Coatue, D1 Capital, GIC, Iconiq and XN as co-leads. About $15 billion was money already committed by cloud partners, including $5 billion from Amazon. The company has raised close to <strong>$144 billion</strong> since 2021, and said its revenue run rate had crossed <strong>$47 billion</strong> earlier that month.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>Three months earlier Anthropic had raised $30 billion at $380 billion. Going from $380 billion to $965 billion in a single quarter is the steepest repricing of a private company anyone has recorded. The $47 billion revenue figure is the part worth sitting with: this is no longer a research bet, it is a business with real income at a scale that explains — or at least frames — the number.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://news.crunchbase.com/ai/anthropic-nears-1t-valuation-65b-seriesh/">Anthropic nears $1T valuation and leapfrogs OpenAI with massive funding round — Crunchbase News</a></li>
+        <li><a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html">Anthropic tops OpenAI as most valuable AI startup, nears $1 trillion valuation — CNBC</a></li>
+        <li><a href="https://finance.yahoo.com/markets/article/anthropic-raises-65-billion-in-latest-funding-round-making-it-more-valuable-than-openai-184115591.html">Anthropic raises $65 billion, making it more valuable than OpenAI — Yahoo Finance</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 04</span>
+    <h3>OpenAI closes the largest private funding round in history</h3>
+    <span class="tag">$122B raised</span><span class="tag">$852B valuation</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>OpenAI finished a <strong>$122 billion round at an $852 billion valuation</strong> on 31 March 2026 — the biggest private raise ever recorded. The round dominated first-quarter numbers by itself, and it landed alongside growing expectation that OpenAI will eventually list publicly.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>A single company absorbing $122 billion in one round is a new category of event. Crunchbase's quarterly analysis credits this one deal with pushing Q1 2026 North American funding to $254.8 billion. It is also the clearest example of the concentration problem: money at this scale is not competing with other startups for capital, it is competing with sovereign wealth funds and public markets.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html">OpenAI closes record-breaking $122 billion funding round as anticipation builds for IPO — CNBC</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-03-31/openai-valued-at-852-billion-after-completing-122-billion-round">OpenAI valued at $852 billion after completing $122 billion round — Bloomberg</a></li>
+        <li><a href="https://openai.com/index/accelerating-the-next-phase-ai/">OpenAI raises $122 billion to accelerate the next phase of AI — OpenAI</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 05</span>
+    <h3>Nvidia puts $5 billion into Safe Superintelligence — which still has no product</h3>
+    <span class="tag">$32B valuation</span><span class="tag">Pre-product</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>On 27 July 2026 Nvidia announced a <strong>$5 billion investment</strong> in <strong>Safe Superintelligence (SSI)</strong>, the lab founded by Ilya Sutskever after he left OpenAI. SSI is now valued at about <strong>$32 billion</strong> and has raised roughly $7 billion in total. The deal is as much a compute partnership as an investment: SSI gets access to Nvidia's Vera Rubin platform, raising its computing power roughly tenfold, and the two will work together on Nvidia's current and future hardware. Other backers include Google Cloud, Andreessen Horowitz, Alphabet and Sequoia.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>SSI has released no product. It has no revenue and operates largely in stealth. A $5 billion cheque against a research thesis and a founder's reputation is the purest expression of how this market prices talent right now. Sutskever's framing was simply: "We have research that is worthy of scaling up." Note also who wrote the cheque — Nvidia is increasingly funding the customers who buy its chips, a pattern worth tracking on its own.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/">Ilya Sutskever's Safe Superintelligence partners with Nvidia to scale its AI research — TechCrunch</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-27/nvidia-makes-substantial-investment-in-sutskever-s-ai-startup">Nvidia to invest $5B in Ilya Sutskever's AI startup Safe Superintelligence — Bloomberg</a></li>
+        <li><a href="https://www.calcalistech.com/ctechnews/article/qy9eg5jw4">SSI raises $5 billion from Nvidia despite not yet releasing a product — CTech</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 06</span>
+    <h3>Travis Kalanick raises $1.7 billion for Atoms and "physical AI"</h3>
+    <span class="tag">Robotics</span><span class="tag">a16z-led</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>On 22 July 2026, <strong>Atoms</strong> — the industrial AI and robotics company run by Uber co-founder Travis Kalanick — closed <strong>$1.7 billion</strong> in a round led by Andreessen Horowitz, with Uber itself among the investors. The pitch is "physical AI": applying AI to industrial automation in the real world rather than to screens. Reporting on the deal notes Atoms plans to own and operate the machines rather than sell them.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>This was the single largest round of that week and one of the largest robotics rounds ever. Two things make it a signal rather than a one-off. First, the money is moving from software into machinery — the most-repeated theme of the last quarter. Second, the business model of owning the robots and selling the output is a departure from selling equipment or software licences, and if it works it changes how industrial automation gets financed.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/">Travis Kalanick's robotics company raises $1.7B, led by a16z — TechCrunch</a></li>
+        <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/uber-co-founder-kalanicks-atoms-secures-1-7-billion-to-build-physical-ai/">Uber co-founder Kalanick's Atoms secures $1.7 billion to build physical AI — PYMNTS</a></li>
+        <li><a href="https://news.crunchbase.com/venture/biggest-funding-rounds-physical-ai-fintech-defense-atoms/">The week's 10 biggest funding rounds: physical AI startup Atoms leads — Crunchbase News</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 07</span>
+    <h3>Etched doubles its valuation to $10.3 billion, betting against general-purpose chips</h3>
+    <span class="tag">Semiconductors</span><span class="tag">2× in one round</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>On 23 July 2026 <strong>Etched</strong> raised <strong>$300 million at a $10.3 billion valuation</strong>, led by Sequoia Capital — more than double its previous valuation. Etched builds chips designed to run one specific kind of AI model very fast, rather than general-purpose chips that run anything. That is a narrower bet than most chip companies make, and it drew scepticism when the company started.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>Nvidia's position rests on general-purpose hardware. Etched's whole argument is that once you know exactly which model shape you are running, a purpose-built chip beats a flexible one on cost and speed by a wide margin. Investors doubling the price in one round says the argument is landing. For anyone looking at AI infrastructure, this is the most credible independent challenge to the default assumption that Nvidia wins every layer.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/">AI chip startup Etched defies skeptics, hits $10.3B valuation — TechCrunch</a></li>
+        <li><a href="https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/">Etched closes $300m funding round, doubles its valuation to $10.3bn — Data Center Dynamics</a></li>
+        <li><a href="https://siliconangle.com/2026/07/23/ai-chip-startup-etched-doubles-valuation-10-3b-new-300m-round/">AI chip startup Etched more than doubles valuation to $10.3B — SiliconANGLE</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 08</span>
+    <h3>Commonwealth Fusion raises another $1 billion, reaching $4 billion total</h3>
+    <span class="tag">Energy</span><span class="tag">$4B cumulative</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>On 30 July 2026 <strong>Commonwealth Fusion Systems</strong> raised a further <strong>$1 billion</strong>, taking its total raised to <strong>$4 billion</strong>. The Massachusetts company is building grid-scale fusion power plants — fusion being the reaction that powers the sun, which produces energy without the long-lived radioactive waste of conventional nuclear power. The money supports work on its first commercial plant, planned for Chesterfield, Virginia.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>Fusion has been "twenty years away" for sixty years, so a $4 billion cumulative raise is notable in itself. What changed is the buyer. AI data centres need enormous, constant, carbon-free electricity, and they need it on a schedule. That demand turned fusion from a science project with a vague market into an energy company with named potential customers. Energy is now an AI story, and this is the clearest example.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://techcrunch.com/2026/07/30/fusion-power-darling-commonwealth-fusion-systems-raises-another-1b/">Fusion power darling Commonwealth Fusion Systems raises another $1B — TechCrunch</a></li>
+        <li><a href="https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/">Commonwealth Fusion Systems raises another $1 billion — Commonwealth Fusion Systems</a></li>
+        <li><a href="https://richmondbizsense.com/2026/07/30/commonwealth-fusion-secures-1b-capital-raise-to-set-stage-for-chesterfield-power-plant/">Commonwealth Fusion secures $1B to set stage for Chesterfield power plant — Richmond BizSense</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 09</span>
+    <h3>Record funding, shrinking seed: $392 billion raised, but fewer deals</h3>
+    <span class="tag">Market data</span><span class="tag">H1 2026</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>Startups in the US and Canada raised <strong>$392 billion in the first half of 2026</strong> — the highest half-year total ever recorded. Q1 came in at $254.8 billion, inflated by OpenAI's $122 billion round; Q2 at $137.2 billion, the second-highest quarter on record. About <strong>80% of Q2 money went to AI companies</strong>, nearly triple the year-earlier level. But deal counts stayed low: the growth came from giant rounds, not from more companies getting funded. Early-stage funding hit a three-year high, while <strong>seed investment fell 15%</strong> quarter over quarter.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>This is the number that matters most to anyone writing early cheques. A record headline total sitting on top of a shrinking seed market means capital is concentrating at the top, not widening the funnel. Less seed money now means fewer Series A candidates in eighteen months — a supply problem that shows up later, quietly, after the record headlines have moved on.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://news.crunchbase.com/venture/na-startup-funding-ma-shattered-records-ai-q2-2026/">North American startup funding shattered records in H1 2026, driven by AI — Crunchbase News</a></li>
+        <li><a href="https://news.crunchbase.com/venture/biggest-funding-rounds-ai-defense-fintech-robotics/">No summer doldrums as dollars still flow to AI — Crunchbase News</a></li>
+      </ul>
+    </div>
+  </article>
+
+  <article>
+    <span class="rank">Story 10</span>
+    <h3>The AI boom is an American boom: the US takes 88% of the money</h3>
+    <span class="tag">Geography</span><span class="tag">Concentration</span>
+    <div class="block">
+      <span class="k">What happened</span>
+      <p>As of mid-June 2026, US companies were capturing nearly <strong>80% of all global startup funding</strong> across every stage, and close to <strong>88% of all AI funding</strong> — about <strong>$319 billion</strong>, most of it going to just two companies, OpenAI and Anthropic. China had raised over $33 billion in 2026, already ahead of its full-year 2025 total. The UK had raised $16.5 billion, behind its 2025 pace of $19.5 billion. Everywhere else in the world combined accounted for roughly <strong>12%</strong> of AI startup funding.</p>
+    </div>
+    <div class="block why">
+      <span class="k">Why it matters</span>
+      <p>Before the AI boom, American companies typically took less than half of global startup investment. The flip to 80% is a structural change, not a cyclical one — and it happened in a country holding a little over 4% of the world's population. For a European investor this cuts both ways: the competition for AI deals is happening somewhere else at a scale that is hard to match, which also means European valuations are set in a much less crowded market.</p>
+    </div>
+    <div class="refs">
+      <span class="k">References</span>
+      <ul>
+        <li><a href="https://news.crunchbase.com/venture/us-ai-startup-funding-boom-data/">The AI startup funding boom is not a global phenomenon — Crunchbase News</a></li>
+        <li><a href="https://news.crunchbase.com/venture/na-startup-funding-ma-shattered-records-ai-q2-2026/">North American startup funding shattered records in H1 2026 — Crunchbase News</a></li>
+      </ul>
+    </div>
+  </article>
+
+</div>
+</div>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Also worth a look</p>
+    <h2>Deals just outside the top ten</h2>
+    <p>These did not make the list, but they point in the same directions — defence, energy, robotics, infrastructure.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Company</th><th>Raised</th><th>What they do</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td>Anduril Industries</td><td class="amt">$5B</td><td>Defence technology</td><td class="dt">May 2026</td></tr>
+          <tr><td>Joulent</td><td class="amt">$1.75B</td><td>Energy infrastructure for compute-heavy industries</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>Together AI</td><td class="amt">$800M</td><td>Infrastructure for running open-source AI models — $8.3B valuation</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>VoltaGrid</td><td class="amt">$775M</td><td>Power systems</td><td class="dt">May 2026</td></tr>
+          <tr><td>Antora Energy</td><td class="amt">$550M</td><td>Thermal batteries for data centres</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>Function</td><td class="amt">$450M</td><td>Consumer health testing</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>Meshy AI</td><td class="amt">$400M</td><td>AI models for 3D generation — $1.5B valuation</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>Mind Robotics</td><td class="amt">$400M</td><td>Industrial robotics with AI</td><td class="dt">May 2026</td></tr>
+          <tr><td>Antares</td><td class="amt">$370M</td><td>Nuclear microreactors</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>Sila</td><td class="amt">$300M</td><td>Silicon anode batteries</td><td class="dt">Jul 2026</td></tr>
+          <tr><td>Cathedral</td><td class="amt">$160M</td><td>Military cyber capabilities — $1.4B valuation</td><td class="dt">Jul 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="takeaways">
+  <div class="wrap">
+    <p class="eyebrow">Three things to take away</p>
+    <h2>What this means for the next two quarters</h2>
+    <div class="cards">
+      <div class="card">
+        <h4>Money is moving from software to hardware and power</h4>
+        <p>Chips (Etched), factory robots (Atoms), fusion (Commonwealth), thermal storage (Antora), microreactors (Antares), grid infrastructure (Joulent, VoltaGrid). The AI story stopped being only about models about two quarters ago.</p>
+      </div>
+      <div class="card">
+        <h4>Consolidation is now the exit</h4>
+        <p>SpaceX buying Cursor for $60 billion in stock sets a precedent: the buyers for the best AI companies are other AI companies with public stock, not incumbent tech giants facing antitrust scrutiny. Expect more all-stock mega-deals.</p>
+      </div>
+      <div class="card">
+        <h4>The top is inflating while the bottom thins out</h4>
+        <p>Record totals, falling seed. If that continues for another two quarters, the interesting opportunity is not competing for AI mega-rounds — it is being one of the few people still writing early cheques when everyone else has moved up-market.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Compiled 3 August 2026 for NO BS! Ventures. Figures are as reported by the sources listed. Private company valuations are self-reported or based on investor reporting and should be treated as indicative.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "01kz3qxfg0v60rzqxfajgf063y",
+  "slug": "startup-stories-aug-2026",
+  "title": "The 10 Hottest Startup Stories — August 2026",
+  "summary": "A market intelligence brief covering ten startup stories and the concentration of 2026 venture funding.",
+  "createdAt": "2026-08-03T12:00:00.000Z",
+  "tags": [
+    "startups",
+    "market-intelligence"
+  ],
+  "source": {
+    "workflow": "archive-import",
+    "originalPath": "Startup Stories — Aug 2026"
+  },
+  "generator": {
+    "agent": "11reports",
+    "skill": "11reports-import-reports"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "markdown": {
+      "path": "startup-stories-report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 19214,
+      "sha256": "sha256:799005f958b1f8c877fe5b51fc7d9c68fd60a49e148379876f4697ef825f190a",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "startup-stories-report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 33191,
+      "sha256": "sha256:a082ccc2e87c5da2c625bbed736739bafa694c03fb5dae2bf4722ba92d15868a",
+      "exposure": "sandbox",
+      "execution": "static",
+      "network": "allowlist",
+      "allowlist": [
+        "https://fonts.googleapis.com",
+        "https://fonts.gstatic.com"
+      ]
+    }
+  },
+  "digest": "sha256:a57e1c2fc29cf9d1dd478b38f0603902ba4d6ea434e4d65e5f7a57930d2ca1d1"
+}

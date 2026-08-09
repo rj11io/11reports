@@ -1,0 +1,4 @@
+interface:
+  display_name: "Import 11reports Archives"
+  short_description: "Import existing report folders safely in batches"
+  default_prompt: "Use $11reports-import-reports to archive these existing report folders."

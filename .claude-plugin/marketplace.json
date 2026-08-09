@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "11reports",
+  "owner": { "name": "rj11io" },
+  "description": "Archive and publish agent-produced reports with verified share links.",
+  "plugins": [
+    {
+      "name": "11reports",
+      "source": "./v0/plugins/11reports"
+    }
+  ]
+}

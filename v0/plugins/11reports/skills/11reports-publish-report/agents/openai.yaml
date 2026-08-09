@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish 11reports Report"
+  short_description: "Validate, archive, deploy, and verify a report"
+  default_prompt: "Use $11reports-publish-report to publish this report bundle and return its verified URL."
