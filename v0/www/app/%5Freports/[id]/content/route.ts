@@ -45,8 +45,9 @@ export async function GET(
   const rawHtml = report.content.html
   if (!rawHtml) return new Response("Not found", { status: 404 })
   const url = new URL(request.url)
+  const standalone = url.searchParams.get("standalone") === "1"
   const token = url.searchParams.get("bridge") ?? ""
-  if (!/^[a-f0-9]{32}$/.test(token))
+  if (!standalone && !/^[a-f0-9]{32}$/.test(token))
     return new Response("Invalid bridge token", { status: 400 })
 
   const nonce = randomBytes(16).toString("base64")
@@ -56,7 +57,9 @@ export async function GET(
     htmlArtifact.network === "allowlist" ? htmlArtifact.allowlist.join(" ") : ""
   const scriptSource = scriptsEnabled
     ? "'unsafe-inline' blob:"
-    : `'nonce-${nonce}'`
+    : standalone
+      ? "'none'"
+      : `'nonce-${nonce}'`
   const csp = [
     "sandbox allow-scripts",
     "default-src 'none'",
@@ -74,15 +77,22 @@ export async function GET(
     `frame-ancestors ${allowedOrigin(request.headers.get("x-11reports-original-host") || request.headers.get("host") || "", id)}`,
   ].join("; ")
 
-  return new Response(injectBridge(rawHtml, id, token, nonce), {
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Content-Security-Policy": csp,
-      "Cache-Control": "public, max-age=0, s-maxage=31536000, immutable",
-      "Referrer-Policy": "no-referrer",
-      "Permissions-Policy":
-        "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
-      "X-Content-Type-Options": "nosniff",
-    },
-  })
+  return new Response(
+    standalone ? rawHtml : injectBridge(rawHtml, id, token, nonce),
+    {
+      headers: {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Disposition": standalone
+          ? `inline; filename="${id}.html"`
+          : "inline",
+        "Content-Security-Policy": csp,
+        "Cache-Control": "public, max-age=0, s-maxage=31536000, immutable",
+        "Referrer-Policy": "no-referrer",
+        "Permissions-Policy":
+          "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+        "X-Content-Type-Options": "nosniff",
+        "X-11Reports-Content-Mode": standalone ? "standalone" : "embedded",
+      },
+    }
+  )
 }

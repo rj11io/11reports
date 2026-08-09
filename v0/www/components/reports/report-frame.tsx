@@ -1,9 +1,14 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { LoaderCircle, RefreshCw, ShieldCheck } from "lucide-react"
+import {
+  ExternalLink,
+  LoaderCircle,
+  RefreshCw,
+  ShieldCheck,
+} from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 
 type FrameMessage = {
@@ -28,6 +33,7 @@ export function ReportFrame({
   const [reload, setReload] = useState(0)
   const [token, setToken] = useState("")
   const source = `/_content?bridge=${token}${staticMode ? "&mode=static" : ""}`
+  const standaloneSource = `/_content?standalone=1${staticMode ? "&mode=static" : ""}`
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -72,14 +78,23 @@ export function ReportFrame({
   return (
     <Card className="gap-0 overflow-hidden py-0">
       <div className="flex min-h-12 flex-wrap items-center justify-between gap-2 border-b bg-background px-3 py-2">
-        <div className="flex items-center gap-2 text-sm font-medium">
-          <ShieldCheck
-            className="size-4 text-muted-foreground"
-            aria-hidden="true"
-          />
-          Isolated HTML
-        </div>
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center gap-1">
+          <div className="mr-1 flex items-center gap-2 text-sm font-medium">
+            <ShieldCheck
+              className="size-4 text-muted-foreground"
+              aria-hidden="true"
+            />
+            Isolated HTML
+          </div>
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            onClick={() => reloadFrame()}
+          >
+            <RefreshCw data-icon="inline-start" />
+            Reload
+          </Button>
           {execution === "scripts" && (
             <Button
               type="button"
@@ -90,16 +105,16 @@ export function ReportFrame({
               {staticMode ? "Enable scripts" : "Disable scripts"}
             </Button>
           )}
-          <Button
-            type="button"
-            variant="ghost"
-            size="sm"
-            onClick={() => reloadFrame()}
-          >
-            <RefreshCw data-icon="inline-start" />
-            Reload
-          </Button>
         </div>
+        <a
+          href={standaloneSource}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={buttonVariants({ variant: "ghost", size: "sm" })}
+        >
+          Open original HTML
+          <ExternalLink data-icon="inline-end" />
+        </a>
       </div>
       <div className="relative bg-muted/30">
         {!loaded && (
