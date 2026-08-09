@@ -89,6 +89,7 @@ test("catalog and known report shell resolve", async () => {
   assert.equal(shell.status, 200)
   assert.match(shell.body, /The 10 Biggest Cybersecurity Stories Right Now/)
   assert.match(shell.body, /Open original HTML/)
+  assert.match(shell.body, /Available files/)
 })
 
 test("HEAD receipt contains exact report identity", async () => {
@@ -139,6 +140,14 @@ test("standalone HTML keeps isolation without injecting the bridge", async () =>
 })
 
 test("exposure and internal-route controls hold", async () => {
+  const html = await request({
+    host: `${id}.reports.rj11.io`,
+    pathname: "/_download/html",
+  })
+  assert.equal(html.status, 200)
+  assert.match(html.headers["content-disposition"], /attachment/)
+  assert.match(html.body, /The 10 Biggest Cybersecurity Stories Right Now/)
+
   const hiddenData = await request({
     host: `${id}.reports.rj11.io`,
     pathname: "/_download/data",

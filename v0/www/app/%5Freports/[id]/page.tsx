@@ -1,13 +1,30 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Database, Download, FileText, Info } from "lucide-react"
+import {
+  ArrowLeft,
+  Braces,
+  ChevronDown,
+  Database,
+  Download,
+  FileCode2,
+  FileText,
+  Info,
+} from "lucide-react"
 import ReactMarkdown from "react-markdown"
 
 import { ReportFrame } from "@/components/reports/report-frame"
 import { Badge } from "@/components/ui/badge"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuLinkItem,
+  DropdownMenuShortcut,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import { cn } from "@/lib/utils"
 import { canonicalReportUrl, getAllReports, getReport } from "@/lib/reports"
 
@@ -142,33 +159,43 @@ export default async function ReportPage({
               </div>
             </div>
 
-            {(canDownloadData || canViewMarkdown) && (
-              <div className="flex flex-wrap gap-2">
-                {canDownloadData && (
-                  <a
-                    className={buttonVariants({
-                      variant: "outline",
-                      size: "sm",
-                    })}
-                    href="/_download/data"
-                  >
-                    <Download data-icon="inline-start" />
-                    Data
-                  </a>
-                )}
-                {canViewMarkdown && (
-                  <a
-                    className={buttonVariants({
-                      variant: "outline",
-                      size: "sm",
-                    })}
-                    href="/_download/markdown"
-                  >
-                    <Download data-icon="inline-start" />
-                    Markdown
-                  </a>
-                )}
-              </div>
+            {(canViewHtml || canViewMarkdown || canDownloadData) && (
+              <DropdownMenu>
+                <DropdownMenuTrigger
+                  className={buttonVariants({ variant: "outline", size: "sm" })}
+                >
+                  <Download data-icon="inline-start" />
+                  Download
+                  <ChevronDown data-icon="inline-end" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="min-w-48">
+                  <DropdownMenuLabel>Available files</DropdownMenuLabel>
+                  {canViewHtml && (
+                    <DropdownMenuLinkItem href="/_download/html" closeOnClick>
+                      <FileCode2 />
+                      HTML
+                      <DropdownMenuShortcut>.html</DropdownMenuShortcut>
+                    </DropdownMenuLinkItem>
+                  )}
+                  {canViewMarkdown && (
+                    <DropdownMenuLinkItem
+                      href="/_download/markdown"
+                      closeOnClick
+                    >
+                      <FileText />
+                      Markdown
+                      <DropdownMenuShortcut>.md</DropdownMenuShortcut>
+                    </DropdownMenuLinkItem>
+                  )}
+                  {canDownloadData && (
+                    <DropdownMenuLinkItem href="/_download/data" closeOnClick>
+                      <Braces />
+                      Data
+                      <DropdownMenuShortcut>.json</DropdownMenuShortcut>
+                    </DropdownMenuLinkItem>
+                  )}
+                </DropdownMenuContent>
+              </DropdownMenu>
             )}
           </div>
 
