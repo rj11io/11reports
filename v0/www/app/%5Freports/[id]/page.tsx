@@ -20,7 +20,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuLabel,
   DropdownMenuLinkItem,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
@@ -169,7 +168,6 @@ export default async function ReportPage({
                   <ChevronDown data-icon="inline-end" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="min-w-48">
-                  <DropdownMenuLabel>Available files</DropdownMenuLabel>
                   {canViewHtml && (
                     <DropdownMenuLinkItem href="/_download/html" closeOnClick>
                       <FileCode2 />
