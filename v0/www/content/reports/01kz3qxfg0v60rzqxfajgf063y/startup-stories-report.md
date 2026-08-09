@@ -1,6 +1,6 @@
 # The 10 Hottest Startup Stories
 
-**As of 3 August 2026** · Prepared for NO BS! Ventures
+**As of 3 August 2026** · Market intelligence report
 
 ---
 

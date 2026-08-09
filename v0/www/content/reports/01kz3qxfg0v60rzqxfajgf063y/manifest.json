@@ -25,23 +25,20 @@
     "markdown": {
       "path": "startup-stories-report.md",
       "mimeType": "text/markdown; charset=utf-8",
-      "bytes": 19214,
-      "sha256": "sha256:799005f958b1f8c877fe5b51fc7d9c68fd60a49e148379876f4697ef825f190a",
+      "bytes": 19212,
+      "sha256": "sha256:bd644f55668ff23c8665f5443f5c5d375ad84ab6f883724aa230ad9fd58c5dbf",
       "exposure": "render"
     },
     "html": {
       "path": "startup-stories-report.html",
       "mimeType": "text/html; charset=utf-8",
-      "bytes": 33191,
-      "sha256": "sha256:a082ccc2e87c5da2c625bbed736739bafa694c03fb5dae2bf4722ba92d15868a",
+      "bytes": 32413,
+      "sha256": "sha256:73715e3f391dc24e211847ee3bbf9270b969b7f8aaa955f145dee4ffd1b4e16a",
       "exposure": "sandbox",
       "execution": "static",
-      "network": "allowlist",
-      "allowlist": [
-        "https://fonts.googleapis.com",
-        "https://fonts.gstatic.com"
-      ]
+      "network": "none",
+      "allowlist": []
     }
   },
-  "digest": "sha256:a57e1c2fc29cf9d1dd478b38f0603902ba4d6ea434e4d65e5f7a57930d2ca1d1"
+  "digest": "sha256:b783002bfe8fdfc018fc4d08d9d51daee2714c058a9e8e875ac3fce8b97de7e8"
 }

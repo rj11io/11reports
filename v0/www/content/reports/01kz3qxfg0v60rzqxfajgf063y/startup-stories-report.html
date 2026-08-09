@@ -4,79 +4,66 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The 10 Hottest Startup Stories — August 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --nobs-white:#FFFFFF;
-  --nobs-blue:#3266FF;
-  --nobs-dark-blue:#181838;
-  --nobs-light-blue:#60C7FF;
-  --nobs-support-1:#00237D;
-  --nobs-support-3:#58A9F7;
-  --nobs-yellow:#FECE00;
-  --font-heading:'Prompt',sans-serif;
-  --font-body:'Roboto',sans-serif;
+  --page:#FFFFFF;
+  --ink:#18181B;
+  --muted:#71717A;
+  --subtle:#F4F4F5;
+  --accent:#334155;
+  --link:#2563EB;
+  --highlight:#FEF3C7;
+  --font-heading:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;--space-6:48px;--space-8:64px;
-  --rule:#E4E7F2;
-  --muted:#5A5F7D;
+  --rule:#E4E4E7;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0;background:var(--nobs-white);color:var(--nobs-dark-blue);
+  margin:0;background:var(--page);color:var(--ink);
   font-family:var(--font-body);font-weight:400;font-size:17px;line-height:1.65;
   -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:940px;margin:0 auto;padding:0 var(--space-4)}
 
 /* ---------- HERO ---------- */
-.hero{background:var(--nobs-dark-blue);color:var(--nobs-white);padding:var(--space-8) 0 var(--space-8)}
+.hero{background:var(--page);color:var(--ink);padding:var(--space-8) 0;border-bottom:1px solid var(--rule)}
 .hero .wrap{display:block}
-.brandrow{display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-6)}
-.mark{
-  width:46px;height:46px;flex:0 0 46px;background:var(--nobs-blue);
-  border-radius:10px;position:relative;
-}
-.mark::after{content:"";position:absolute;left:9px;bottom:-6px;width:0;height:0;
-  border-left:8px solid var(--nobs-blue);border-bottom:7px solid transparent}
-.mark span{
-  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-heading);font-weight:900;font-size:15px;color:#fff;letter-spacing:-.5px;line-height:1;
-}
-.brandname{font-family:var(--font-heading);font-weight:700;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--nobs-light-blue)}
+.report-label{font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:var(--space-4)}
 h1{
-  font-family:var(--font-heading);font-weight:900;
-  font-size:clamp(38px,6.2vw,68px);line-height:1.02;letter-spacing:-1.5px;
+  font-family:var(--font-heading);font-weight:700;
+  font-size:clamp(38px,6.2vw,64px);line-height:1.05;letter-spacing:-1.8px;
   margin:0 0 var(--space-3);max-width:15ch;
 }
-h1 em{font-style:normal;color:var(--nobs-light-blue)}
-.hero .meta{font-size:15px;color:#A7AFCE;letter-spacing:.3px}
-.hero .meta strong{color:var(--nobs-white);font-weight:500}
+h1 em{font-style:normal;color:var(--accent)}
+.hero .meta{font-size:15px;color:var(--muted);letter-spacing:.1px}
+.hero .meta strong{color:var(--ink);font-weight:600}
 
 /* ---------- STAT BAND ---------- */
-.stats{background:var(--nobs-blue);color:var(--nobs-white)}
+.stats{background:var(--subtle);color:var(--ink);border-bottom:1px solid var(--rule)}
 .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);padding:var(--space-6) 0}
-.stat .n{font-family:var(--font-heading);font-weight:900;font-size:clamp(30px,4vw,46px);line-height:1;letter-spacing:-1px}
-.stat .l{font-size:13px;line-height:1.4;margin-top:var(--space-1);color:#DCE5FF}
+.stat .n{font-family:var(--font-heading);font-weight:700;font-size:clamp(30px,4vw,44px);line-height:1;letter-spacing:-1px}
+.stat .l{font-size:13px;line-height:1.4;margin-top:var(--space-1);color:var(--muted)}
 @media(max-width:760px){.stats .grid{grid-template-columns:repeat(2,1fr)}}
 
 /* ---------- SUMMARY ---------- */
 section{padding:var(--space-8) 0}
 .eyebrow{
   font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:2.5px;
-  text-transform:uppercase;color:var(--nobs-blue);margin:0 0 var(--space-2);
+  text-transform:uppercase;color:var(--muted);margin:0 0 var(--space-2);
 }
 h2{font-family:var(--font-heading);font-weight:700;font-size:clamp(26px,3.4vw,34px);line-height:1.15;letter-spacing:-.6px;margin:0 0 var(--space-3)}
 p{margin:0 0 var(--space-3);max-width:70ch}
 .lead{font-size:20px;line-height:1.6}
-strong{font-weight:500;color:var(--nobs-dark-blue)}
-.summary strong{box-shadow:inset 0 -.55em 0 rgba(254,206,0,.35)}
+strong{font-weight:600;color:var(--ink)}
+.summary strong{box-shadow:inset 0 -.5em 0 var(--highlight)}
 
 ol.spine{list-style:none;counter-reset:s;margin:var(--space-4) 0 0;padding:0}
 ol.spine li{counter-increment:s;position:relative;padding-left:52px;margin-bottom:var(--space-3);max-width:70ch}
 ol.spine li::before{
   content:counter(s);position:absolute;left:0;top:1px;
-  width:32px;height:32px;border-radius:50%;background:var(--nobs-dark-blue);color:#fff;
+  width:32px;height:32px;border-radius:50%;background:var(--ink);color:#fff;
   font-family:var(--font-heading);font-weight:700;font-size:15px;
   display:flex;align-items:center;justify-content:center;
 }
@@ -86,8 +73,8 @@ ol.spine li::before{
 article{padding:var(--space-6) 0;border-bottom:1px solid var(--rule)}
 article:last-of-type{border-bottom:0}
 .rank{
-  font-family:var(--font-heading);font-weight:900;font-size:13px;letter-spacing:2px;
-  color:var(--nobs-blue);display:block;margin-bottom:var(--space-1);
+  font-family:var(--font-heading);font-weight:700;font-size:13px;letter-spacing:2px;
+  color:var(--muted);display:block;margin-bottom:var(--space-1);
 }
 article h3{
   font-family:var(--font-heading);font-weight:700;font-size:clamp(21px,2.6vw,27px);
@@ -95,44 +82,44 @@ article h3{
 }
 .tag{
   display:inline-block;font-family:var(--font-body);font-weight:500;font-size:11px;
-  letter-spacing:1.2px;text-transform:uppercase;color:var(--nobs-support-1);
-  background:#EDF1FF;padding:5px 10px;border-radius:3px;margin:0 var(--space-1) var(--space-3) 0;
+  letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);
+  background:var(--subtle);padding:5px 10px;border-radius:999px;margin:0 var(--space-1) var(--space-3) 0;
 }
 .block{margin-bottom:var(--space-3);max-width:70ch}
 .block .k{
   font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:1.8px;
   text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px;
 }
-.why{border-left:3px solid var(--nobs-blue);padding-left:var(--space-3)}
+.why{border-left:3px solid var(--accent);padding-left:var(--space-3)}
 .refs{margin-top:var(--space-3)}
 .refs .k{font-family:var(--font-heading);font-weight:700;font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px}
 .refs ul{margin:0;padding:0;list-style:none}
 .refs li{margin-bottom:6px;font-size:15px;padding-left:16px;position:relative}
-.refs li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--nobs-yellow);border-radius:50%}
-a{color:var(--nobs-blue);text-decoration:none;border-bottom:1px solid rgba(50,102,255,.3)}
-a:hover{border-bottom-color:var(--nobs-blue);background:rgba(50,102,255,.06)}
+.refs li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--accent);border-radius:50%}
+a{color:var(--link);text-decoration:none;border-bottom:1px solid rgba(37,99,235,.3)}
+a:hover{border-bottom-color:var(--link);background:rgba(37,99,235,.05)}
 
 /* ---------- TABLE ---------- */
 .tablewrap{overflow-x:auto;margin-top:var(--space-4)}
 table{border-collapse:collapse;width:100%;font-size:15px;min-width:620px}
 th{
   font-family:var(--font-heading);font-weight:700;font-size:11px;letter-spacing:1.5px;
-  text-transform:uppercase;text-align:left;color:var(--nobs-white);background:var(--nobs-dark-blue);
+  text-transform:uppercase;text-align:left;color:#fff;background:var(--ink);
   padding:12px var(--space-2);
 }
 td{padding:12px var(--space-2);border-bottom:1px solid var(--rule);vertical-align:top}
-tbody tr:nth-child(even){background:#F7F9FF}
-td.amt{font-family:var(--font-heading);font-weight:700;color:var(--nobs-blue);white-space:nowrap}
+tbody tr:nth-child(even){background:var(--subtle)}
+td.amt{font-family:var(--font-heading);font-weight:700;color:var(--accent);white-space:nowrap}
 td.dt{color:var(--muted);white-space:nowrap}
 
 /* ---------- TAKEAWAYS ---------- */
-.takeaways{background:var(--nobs-dark-blue);color:var(--nobs-white)}
-.takeaways h2{color:var(--nobs-white)}
-.takeaways .eyebrow{color:var(--nobs-light-blue)}
+.takeaways{background:var(--subtle);color:var(--ink);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.takeaways h2{color:var(--ink)}
+.takeaways .eyebrow{color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);margin-top:var(--space-4)}
-.card{border-top:3px solid var(--nobs-light-blue);padding-top:var(--space-3)}
+.card{background:var(--page);border:1px solid var(--rule);border-radius:10px;padding:var(--space-3)}
 .card h4{font-family:var(--font-heading);font-weight:700;font-size:19px;line-height:1.25;margin:0 0 var(--space-2)}
-.card p{font-size:15px;color:#C3CBE8;margin:0;max-width:none}
+.card p{font-size:15px;color:var(--muted);margin:0;max-width:none}
 @media(max-width:760px){.cards{grid-template-columns:1fr}}
 
 /* ---------- FOOTER ---------- */
@@ -144,10 +131,7 @@ footer p{font-size:13px;color:var(--muted);max-width:80ch;margin:0}
 
 <header class="hero">
   <div class="wrap">
-    <div class="brandrow">
-      <div class="mark"><span>NO<br>BS!</span></div>
-      <div class="brandname">NO BS! Ventures</div>
-    </div>
+    <div class="report-label">Market intelligence report</div>
     <h1>The 10 hottest <em>startup stories</em></h1>
     <p class="meta"><strong>As of 3 August 2026</strong> &nbsp;·&nbsp; Market intelligence brief &nbsp;·&nbsp; 10 stories, 30 sources</p>
   </div>
@@ -451,7 +435,7 @@ footer p{font-size:13px;color:var(--muted);max-width:80ch;margin:0}
 
 <footer>
   <div class="wrap">
-    <p>Compiled 3 August 2026 for NO BS! Ventures. Figures are as reported by the sources listed. Private company valuations are self-reported or based on investor reporting and should be treated as indicative.</p>
+    <p>Compiled 3 August 2026. Figures are as reported by the sources listed. Private company valuations are self-reported or based on investor reporting and should be treated as indicative.</p>
   </div>
 </footer>
 
