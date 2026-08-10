@@ -3,11 +3,11 @@
   "id": "01kz3qxfg0v60rzqxfajgf063y",
   "slug": "startup-stories-aug-2026",
   "title": "The 10 Hottest Startup Stories — August 2026",
-  "summary": "A market intelligence brief covering ten startup stories and the concentration of 2026 venture funding.",
+  "summary": "A startup news brief covering ten startup stories and the concentration of 2026 venture funding.",
   "createdAt": "2026-08-03T12:00:00.000Z",
   "tags": [
     "startups",
-    "market-intelligence"
+    "startup-news"
   ],
   "source": {
     "workflow": "archive-import",
@@ -25,20 +25,20 @@
     "markdown": {
       "path": "startup-stories-report.md",
       "mimeType": "text/markdown; charset=utf-8",
-      "bytes": 19212,
-      "sha256": "sha256:bd644f55668ff23c8665f5443f5c5d375ad84ab6f883724aa230ad9fd58c5dbf",
+      "bytes": 19205,
+      "sha256": "sha256:4c94719ce0789e3a16568d30c8b69f66cf1216b9f7b50094d27ff3792195137d",
       "exposure": "render"
     },
     "html": {
       "path": "startup-stories-report.html",
       "mimeType": "text/html; charset=utf-8",
-      "bytes": 32413,
-      "sha256": "sha256:73715e3f391dc24e211847ee3bbf9270b969b7f8aaa955f145dee4ffd1b4e16a",
+      "bytes": 32399,
+      "sha256": "sha256:93a763d546f199d9553faa56f746f0a292b98eb7a017e10779e79db27ee68394",
       "exposure": "sandbox",
       "execution": "static",
       "network": "none",
       "allowlist": []
     }
   },
-  "digest": "sha256:b783002bfe8fdfc018fc4d08d9d51daee2714c058a9e8e875ac3fce8b97de7e8"
+  "digest": "sha256:a9e5ef785d52b0d6072e06c5325e157b47d0932a076d4af9312bb99c5d1d4b08"
 }
