@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzscjcv0xxngrt87atskccrt",
+  "slug": "website-metadata-open-graph-seo-reference",
+  "title": "Website Metadata, Open Graph, and SEO Reference",
+  "summary": "Every tag a page puts in its head, plus robots.txt and sitemap.xml, and what search engines, chat apps, social networks, and AI crawlers do with them.",
+  "createdAt": "2026-08-11T21:45:00.000Z",
+  "tags": [
+    "seo",
+    "metadata",
+    "open-graph",
+    "structured-data",
+    "ai-crawlers",
+    "web"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "website-seo-meta-og"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 27563,
+      "sha256": "sha256:10a34f49fe8dd57004bf3e991ceb74c254e2fb8b93b4096493fc94239497528e",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 98350,
+      "sha256": "sha256:2d04cb943a6b4a78e254d765edcad9ff65289dc175c3c2db8d1ffaad6b864bb2",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 283454,
+      "sha256": "sha256:a6bd5030a19768211544deacdf89cfc01255d13104b4dd06de151519807a0cc0",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:ec20562e7919bcd532de74168ab675b4704da36e8bdee7dac0fcebf6aaa41f3d"
+}
