@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzsb2khghvm2sqj72wp9gyky",
+  "slug": "ai-agent-harnesses-git-worktrees-v0",
+  "title": "AI Agent Harnesses and Git Worktrees",
+  "summary": "How ten agent coding tools create, seed, guard, hand off, and clean up git worktrees, sixteen failure modes with fixes, and when to reach for a container or VM instead.",
+  "createdAt": "2026-08-11T21:18:54.000Z",
+  "tags": [
+    "ai-agents",
+    "git-worktrees",
+    "parallel-agents",
+    "developer-tooling",
+    "isolation",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "harness-worktrees-md"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 125152,
+      "sha256": "sha256:7daf48d273308d653b21aa057f2bb1f28b1c8fb3b641e217b6cfa249296203b4",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 281545,
+      "sha256": "sha256:19eee76132a3f2c6fd15a04b787f93d149afb4d7c96cf151d6ce7cd41b9a74c3",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:33283f415a30650c951257b1a9b386d28d4086598efe854f16381d8c1abdd152"
+}
