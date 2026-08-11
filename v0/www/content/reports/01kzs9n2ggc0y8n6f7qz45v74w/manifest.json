@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "01kzs9n2ggc0y8n6f7qz45v74w",
-  "slug": "harness-memory-md",
+  "slug": "harness-memory-md-v0",
   "title": "How AI coding agents handle memory files",
   "summary": "How 15 agent harnesses and 2 chat surfaces handle standing-instruction files at global, project, and thread scope: exact paths, load order, size caps, merge rules, compaction survival, and the failure modes each design produces.",
   "createdAt": "2026-08-11T20:54:02.000Z",
@@ -52,5 +52,5 @@
       "allowlist": []
     }
   },
-  "digest": "sha256:082d3c86a53c582fe3544a5cb17a77ca55460603ab8e40788989c13aef3e5cb9"
+  "digest": "sha256:b2dc0984add34555242c7aa2fe3a2dd6f920d0df08b53de16fe4ed7981d60b41"
 }
