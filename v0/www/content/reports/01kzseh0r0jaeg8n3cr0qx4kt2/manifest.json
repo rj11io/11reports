@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzseh0r0jaeg8n3cr0qx4kt2",
+  "slug": "ai-benchmarking-working-reference",
+  "title": "AI Benchmarking: A Working Reference",
+  "summary": "What an AI benchmark can and cannot tell you, and the practices that make a score trustworthy: 37 benchmarks catalogued, the statistics of error bars and power, contamination and saturation, model and human judging, agent evaluation, safety testing, standards, and 28 failure modes.",
+  "createdAt": "2026-08-11T22:19:12.000Z",
+  "tags": [
+    "ai-benchmarking",
+    "ai-evaluation",
+    "evals",
+    "agent-evaluation",
+    "statistics",
+    "data-contamination",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "ai-benchmarking-best-prac"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 73496,
+      "sha256": "sha256:6be5883adc8208e1902f8b8b2de8423ebaa29f70addbacf7a0412c7965b97b17",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 143996,
+      "sha256": "sha256:0935803b59a1f9c74cb229e59d267e3bd17d91cee20b4ded26b2c3240ad8c256",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 428935,
+      "sha256": "sha256:666e064c02c09f139d799db4bc040deb2aa8c1cb345e69feaa243feda262d4ed",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:dc2fd586c0a3ab407701f8e8b3f5c0b138a33fa97d20ba3fe534e7a7de178439"
+}
