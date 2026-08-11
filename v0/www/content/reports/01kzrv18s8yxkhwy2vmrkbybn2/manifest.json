@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzrv18s8yxkhwy2vmrkbybn2",
+  "slug": "intelligence-reporting-structure",
+  "title": "Intelligence Reporting: Structure, Assessment, and Briefing",
+  "summary": "A standalone research report on intelligence reporting, analytic assessments, and briefings.",
+  "createdAt": "2026-08-11T16:38:33.000Z",
+  "tags": [
+    "intelligence",
+    "reporting",
+    "analytic-assessment",
+    "briefing",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "000-initial research"
+  },
+  "generator": {
+    "agent": "codex",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 71845,
+      "sha256": "sha256:36190cf905e0d61e4bf7961ae0c78341331c2a4c68d0b1d42ad1637589995327",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 52429,
+      "sha256": "sha256:59adfbf1d7b76399b83792109a9ef2af95018a41d62ff4b2efd953b3eab047ed",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:323921614589b0e4f42842fe964babaa03e4dc1f251082fb636dc7da061ba05f"
+}
