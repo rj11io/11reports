@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzsddvr0hc380zsaf97qkmej",
+  "slug": "market-intelligence-working-handbook",
+  "title": "Market Intelligence: A Working Handbook",
+  "summary": "How market intelligence works end to end: the decision-first cycle, source ladder and signal reliability, analysis and calibrated judgment, product formats and cadence, operating model and metrics, the legal perimeter (trade secrets, scraping, GDPR, MNPI, antitrust), and what research agents changed by 2026.",
+  "createdAt": "2026-08-11T22:00:00.000Z",
+  "tags": [
+    "market-intelligence",
+    "competitive-intelligence",
+    "research-methods",
+    "osint",
+    "analysis",
+    "data-ethics",
+    "ai"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "market-intel-001"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 22325,
+      "sha256": "sha256:0165fd66e1a826b8e3386e27b2f411f47e5a6cb50b5a4dbcfb74fd05d8c990e4",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 126021,
+      "sha256": "sha256:251de8a1b7475d9acc78b271f1cd4afd99f684e71c72c4943c6cfd98f01aad7e",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 115973,
+      "sha256": "sha256:cef6f35ca1a2094e670b9942ca5624c813b6b893fecb904e48227ca7e635af78",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:1f43d7182df66dc0d8e5b74f3b6417131216714af75d9c87bc414667a272909e"
+}
