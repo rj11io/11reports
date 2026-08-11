@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzsaxmbrqrtf7vn71s7wvmtn",
+  "slug": "harness-internals",
+  "title": "Harness Internals: the home directory you never look at",
+  "summary": "What Claude Code and OpenAI Codex CLI write into their home directories, measured on one machine: 4.0 GB across both, 42% conversation transcripts, 27% reclaimable waste, and the file classes no documentation mentions.",
+  "createdAt": "2026-08-11T21:16:11.000Z",
+  "tags": [
+    "ai-harness",
+    "claude-code",
+    "codex-cli",
+    "security",
+    "privacy",
+    "disk-usage",
+    "developer-tools"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "harness-internals"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 18096,
+      "sha256": "sha256:ae1373988f9cd61a395ec51f83e9e9915f1500b1880fe186a6e0037eedd6c5e7",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 80384,
+      "sha256": "sha256:fed72a17865e583111713e3c26c968b430c03e9a1144fb7fd732b1090fbbe34e",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 31862,
+      "sha256": "sha256:545e4b73c585d19f6ae5c4bb9d33b21bca6cfc63048c751560909f75c5bcd4ee",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:07eaca752be3eef17caf58581d9c190e044d3d0e89f78421c95112832c35575e"
+}
