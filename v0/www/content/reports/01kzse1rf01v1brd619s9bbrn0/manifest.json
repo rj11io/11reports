@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzse1rf01v1brd619s9bbrn0",
+  "slug": "code-analytics-local-and-github",
+  "title": "Code analytics: what you can measure locally and from GitHub",
+  "summary": "Field guide to every code measurement available from a local Git checkout and the GitHub API, with tested endpoint behaviour, costs, rate limits and the traps that make each number wrong.",
+  "createdAt": "2026-08-11T22:10:52.000Z",
+  "tags": [
+    "code-analytics",
+    "git",
+    "github-api",
+    "software-metrics",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "gh-code-analytics"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 29703,
+      "sha256": "sha256:badbf72c2940bb434affab2d23299cff13e96decf1fe6611a727298621dfcaa4",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 112980,
+      "sha256": "sha256:3be4abed37a22999d35f66c8c8ef01af578c7491317d9c4cae616fbe28e0971b",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 279066,
+      "sha256": "sha256:8ff3f8539f6e10c15a46b43883cc77f9060f3eae96b3dccf6e2434861c79622a",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:7d07346289824ff4e0f69dae788f4e639ba12f9a5fe2a8ffdcab4663915f5990"
+}
