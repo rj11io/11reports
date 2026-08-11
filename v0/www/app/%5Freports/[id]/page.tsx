@@ -12,6 +12,7 @@ import {
   Info,
 } from "lucide-react"
 import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 import { ReportFrame } from "@/components/reports/report-frame"
 import { Badge } from "@/components/ui/badge"
@@ -243,14 +244,41 @@ export default async function ReportPage({
 
         {view === "markdown" && markdownArtifact && report.content.markdown && (
           <Card>
-            <CardContent className="mx-auto w-full max-w-4xl text-[15px] leading-7 [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-4 [&_blockquote]:my-5 [&_blockquote]:border-l-2 [&_blockquote]:pl-4 [&_code]:rounded [&_code]:bg-muted [&_code]:px-1 [&_h1]:mt-8 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-semibold [&_h2]:mt-8 [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-lg [&_h3]:font-semibold [&_hr]:my-8 [&_hr]:border-border [&_li]:my-1 [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:my-4 [&_pre]:my-5 [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-muted [&_pre]:p-4 [&_strong]:font-semibold [&_table]:my-5 [&_table]:w-full [&_table]:text-left [&_td]:border-b [&_td]:p-2 [&_th]:border-b [&_th]:p-2 [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6">
+            <CardContent className="mx-auto w-full max-w-4xl text-[15px] leading-7 [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-4 [&_blockquote]:my-5 [&_blockquote]:border-l-2 [&_blockquote]:pl-4 [&_code]:rounded [&_code]:bg-muted [&_code]:px-1 [&_h1]:mt-8 [&_h1]:mb-4 [&_h1]:text-3xl [&_h1]:font-semibold [&_h2]:mt-8 [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-lg [&_h3]:font-semibold [&_hr]:my-8 [&_hr]:border-border [&_li]:my-1 [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_p]:my-4 [&_pre]:my-5 [&_pre]:overflow-x-auto [&_pre]:rounded-lg [&_pre]:bg-muted [&_pre]:p-4 [&_strong]:font-semibold [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6">
               {markdownArtifact.exposure === "render" ? (
                 <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
                   components={{
                     a: ({ children, ...props }) => (
                       <a {...props} target="_blank" rel="noopener noreferrer">
                         {children}
                       </a>
+                    ),
+                    // Wide tables scroll inside their own container so the
+                    // page body never scrolls sideways. `style` carries the
+                    // GFM column alignment and is the only prop worth keeping.
+                    table: ({ children }) => (
+                      <div className="-mx-2 my-5 overflow-x-auto px-2">
+                        <table className="w-full min-w-2xl border-collapse text-left text-sm">
+                          {children}
+                        </table>
+                      </div>
+                    ),
+                    th: ({ children, style }) => (
+                      <th
+                        style={style}
+                        className="border-b border-border p-2 align-bottom font-semibold"
+                      >
+                        {children}
+                      </th>
+                    ),
+                    td: ({ children, style }) => (
+                      <td
+                        style={style}
+                        className="border-b border-border p-2 align-top tabular-nums"
+                      >
+                        {children}
+                      </td>
                     ),
                   }}
                 >
