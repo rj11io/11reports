@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzse2090yn1a927pqeza7syb",
+  "slug": "myers-briggs-working-reference",
+  "title": "Myers-Briggs: A Working Reference",
+  "summary": "What the Myers-Briggs Type Indicator is, what its own numbers show, the strongest arguments on each side, and what to use instead when a decision about a person depends on the answer.",
+  "createdAt": "2026-08-11T22:11:00.000Z",
+  "tags": [
+    "psychology",
+    "personality",
+    "mbti",
+    "psychometrics",
+    "assessment",
+    "evidence-review",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "myers-briggs-001"
+  },
+  "generator": {
+    "agent": "claude-code",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 27935,
+      "sha256": "sha256:c05b16bbcbd9d3e9cbebffcc1f3590ad94f1c040ad3e606a6765580003890ec1",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 102732,
+      "sha256": "sha256:2c1328ce4be91b6d2b8aa69e02a4fbbde6c205443df3aea58de79a48ca9f1084",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 260834,
+      "sha256": "sha256:42317d6484f2abd94704896a2d923c2e12713eb95f1bf6f1260f9a6bce05c202",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:e916170bade486313090697287c7ba20172462f7bdc8791bf23f127b6647ef75"
+}
