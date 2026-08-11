@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzskatm0w6rz7kxy6qwax8ve",
+  "slug": "command-and-control-c2-cybersecurity",
+  "title": "Command and Control: the conversation you were never meant to hear",
+  "summary": "How attackers keep talking to machines they have broken into, what each channel type costs them, and which detections actually hold up. Desk study of 54 public sources, no original measurement.",
+  "createdAt": "2026-08-11T23:43:12.000Z",
+  "tags": [
+    "command-and-control",
+    "c2",
+    "detection-engineering",
+    "threat-intelligence",
+    "mitre-attack",
+    "network-security",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "security-c2"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 48244,
+      "sha256": "sha256:bf76538cbbd1194affa80068726f1e6252c4d81d790afafdbc68d2b09ad094b8",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 168675,
+      "sha256": "sha256:3fe45c79e95eb068ef17dd76fb15baa4ebfc0058eb83f6c61adeb6ea2c7c09b3",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 195374,
+      "sha256": "sha256:0d2e04a13c176f3e40a9f67ea49e78ea5b8efb01ecd34c04272ee25ad2f853e1",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:343ed3196c3aa3dbbd1b26af50d6d0bd78ef0fe50f475439caf3ec3c229425f0"
+}
