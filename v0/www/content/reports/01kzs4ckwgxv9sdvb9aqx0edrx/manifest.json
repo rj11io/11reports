@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzs4ckwgxv9sdvb9aqx0edrx",
+  "slug": "interactive-data-visualization-best-practices-artificial-analysis-audit",
+  "title": "Interactive Data Visualization Best Practices and Artificial Analysis Audit",
+  "summary": "Practical chart taxonomy, visualization anatomy, interaction and accessibility guidance, plus a dated audit of Artificial Analysis controls and visual patterns.",
+  "createdAt": "2026-08-11T19:22:02.000Z",
+  "tags": [
+    "data-visualization",
+    "interactive-visualization",
+    "charts",
+    "accessibility",
+    "artificial-analysis",
+    "research"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "datavis-best-pracc"
+  },
+  "generator": {
+    "agent": "codex",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 9069,
+      "sha256": "sha256:c3740aa89e41c49b6394c66dc3f22dacc95142fddd01b1e8adcf0aa65fd8276f",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 98020,
+      "sha256": "sha256:4da6b104cabeca50b1d8d3ec4e203987775a6c44a5e16a1a321dd436c1584dfa",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 285750,
+      "sha256": "sha256:405f530c924e886b6bf5c29253315e40b51cbac2b63915fef293320058585731",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:5baa7f9a39b19d9f00ddecc44d426f0770c172a44fcf77e6981f7e63c9202db0"
+}
