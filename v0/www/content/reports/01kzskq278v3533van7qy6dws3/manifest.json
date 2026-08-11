@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzskq278v3533van7qy6dws3",
+  "slug": "modern-ui-ux-reference",
+  "title": "Modern UI/UX: A Working Reference",
+  "summary": "What modern interface work requires now: the thresholds standards and regulators set, the platform features that replaced custom code, and what the top million websites still get wrong.",
+  "createdAt": "2026-08-11T23:49:53.000Z",
+  "tags": [
+    "ui",
+    "ux",
+    "accessibility",
+    "wcag",
+    "design-systems",
+    "design-tokens",
+    "performance",
+    "core-web-vitals",
+    "web-platform",
+    "ai-ux",
+    "dark-patterns"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "modern-ui-ux-001"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 63573,
+      "sha256": "sha256:6db77b3f342e8faa8672f3ad4f3d2fc26e8674c572b6ca3c095fd5339d34518f",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 154945,
+      "sha256": "sha256:1e4c4f06290fbd6fc7f4b47e8490239b79e168f13c18e4b0d2d995c586bfa92f",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 361366,
+      "sha256": "sha256:bdef437a6575b2d67183bb6ca070773fc22a1f6b222b62439b16318bc5f5cf07",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:7711b1b1cb0f593919b6e7e78f70ef320d9a447a61a109640cb66f9e5d2cf3fd"
+}
