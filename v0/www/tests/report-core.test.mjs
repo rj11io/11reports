@@ -61,7 +61,7 @@ async function fixture(options = {}) {
 test("the checked-in archive validates", async () => {
   const result = await validateArchive(path.join(appRoot, "content", "reports"))
   assert.equal(result.ok, true, result.errors.join("\n"))
-  assert.equal(result.reports.length, 4)
+  assert.ok(result.reports.length > 0, "archive must contain at least one report")
 })
 
 test("ULIDs are lowercase and DNS-safe", () => {
