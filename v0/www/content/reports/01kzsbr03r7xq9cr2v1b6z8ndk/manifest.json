@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzsbr03r7xq9cr2v1b6z8ndk",
+  "slug": "rev-eng-whichai-ui-design-bench",
+  "title": "Reverse engineering WhichAI.dev: a teardown of ui-design-bench",
+  "summary": "How a one-person design benchmark preserves 325 AI-generated landing pages as running code, why its cross-model comparison is confounded by four different skill versions inside one group, and the eleven engineering defects found in its shipped site.",
+  "createdAt": "2026-08-11T21:30:35.000Z",
+  "tags": [
+    "reverse-engineering",
+    "benchmark",
+    "ai-design",
+    "nextjs",
+    "methodology-audit"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "rev-eng-wai"
+  },
+  "generator": {
+    "agent": "claude-code",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 41327,
+      "sha256": "sha256:790e7f71ae2bcf127b45aa7ee4b21e52d56b8dee5d21884247d65f582e4f91d4",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 109515,
+      "sha256": "sha256:5c9ca33946ddab2151dff0b2fbab8a25c6c3f6240d8a08a26ded3e77f84355bd",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 42427,
+      "sha256": "sha256:7d6c8b10661ec3584664f9aca80c1ab5f586ba4152b18558238f8d27b772f7ee",
+      "exposure": "sandbox",
+      "execution": "static",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:9cb9765b5346cc96655e4b25beb0514b08ba848a5b9daa0a001da21a470960ce"
+}
