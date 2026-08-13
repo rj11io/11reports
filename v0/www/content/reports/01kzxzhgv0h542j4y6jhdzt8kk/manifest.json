@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "01kzxzhgv0h542j4y6jhdzt8kk",
+  "slug": "google-open-knowledge-format",
+  "title": "Google's Open Knowledge Format: A Working Reference",
+  "summary": "What OKF v0.2 specifies, what its own bundles and reference code reveal when measured, and how to write YAML frontmatter that survives real parsers.",
+  "createdAt": "2026-08-13T16:33:32.000Z",
+  "tags": [
+    "okf",
+    "google-cloud",
+    "knowledge-format",
+    "yaml",
+    "frontmatter",
+    "ai-agents",
+    "specification",
+    "data-catalog"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "google-okf-spec"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 19011,
+      "sha256": "sha256:4fe7f52b429caa84c69d4a98bf72f48bb3c4f608dd1f4e0bdd783e24626a83bc",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 119599,
+      "sha256": "sha256:8f4777d2130ea11808d3ea31cf81bfc0981dccbd677670d40903a099bf9498e7",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 352216,
+      "sha256": "sha256:9230d7e342d69407feba809e8a29b29d6d36bb6dd2c687b602f10964dd9ae79a",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:6900abf359458d4aeb85676a3e0e2375e76ecfdfc43a7ee826b3e8ef8f977b86"
+}
