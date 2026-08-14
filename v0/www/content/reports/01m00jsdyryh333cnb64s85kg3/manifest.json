@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "01m00jsdyryh333cnb64s85kg3",
+  "slug": "frontmatter-language-conventions",
+  "title": "Frontmatter Beyond YAML: The Language Conventions",
+  "summary": "Markdown frontmatter has no standard. The conventions in common use, what each language does to identical metadata, and which one to pick.",
+  "createdAt": "2026-08-14T16:48:23.000Z",
+  "tags": [
+    "frontmatter",
+    "yaml",
+    "toml",
+    "json",
+    "markdown",
+    "static-site-generators",
+    "metadata",
+    "parsers"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "frontmatter-lang-conventions"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 13170,
+      "sha256": "sha256:9c0c936c70fbb36875151b3cdd9059a87a5abeb595e4e44a8b837dc7e28b1f2b",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 34842,
+      "sha256": "sha256:5ecbd39eb6ec61312d1caaa9022312ba52966311153e0a7c7a304862bb79db15",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 194374,
+      "sha256": "sha256:aaf03fbd57e689b69cc532fa2f7da0f22c792da6056afb8c21abe8e33b5589c1",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:a44d27b5624878580b1f2e1dc1a8c75e2733962963a489ac9fdd87463832e0ae"
+}
