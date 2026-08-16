@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "01m06ep190kam9w5e8d681wayy",
+  "slug": "testing-types-and-practices",
+  "title": "Testing: Every Kind, and What They Have in Common",
+  "summary": "Software testing in depth, then testing outside code, and the map between them. Every test in every field is the same six-part machine.",
+  "createdAt": "2026-08-16T23:32:04.000Z",
+  "tags": [
+    "testing",
+    "software-testing",
+    "quality-assurance",
+    "test-automation",
+    "statistics",
+    "clinical-trials",
+    "manufacturing",
+    "standards"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "testing-practices"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 45412,
+      "sha256": "sha256:651514cedcd39c2c6602e8fb9b247a3b9a91884cd5376740b0c8ebc3d0f8d41f",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 173822,
+      "sha256": "sha256:aaae1cfe7b8dbacc7fd123464c5fceb4c2bdfac34bd66c697b5d732b3c9832ae",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 415068,
+      "sha256": "sha256:ce2ba5a8abe1338e9e021046a1987e6aeed63d65f1a1cf750b71177c9a998e3d",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:5d76fd099a934b0a5bfab29e77c206db718d6bec0c713873c56bfd05e894d8f6"
+}
