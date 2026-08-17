@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "01m08fkjq8e12afawmtgmshfzd",
+  "slug": "testing-types-and-practices-r2",
+  "title": "Testing: Every Kind, and What They Have in Common (r2)",
+  "summary": "Revision 2. Adds concurrency testing, how to choose what to test, packaged-artifact testing, and a red team on the report's own argument.",
+  "createdAt": "2026-08-17T18:26:41.000Z",
+  "tags": [
+    "testing",
+    "software-testing",
+    "quality-assurance",
+    "test-automation",
+    "distributed-systems",
+    "risk-management",
+    "statistics",
+    "clinical-trials",
+    "manufacturing",
+    "standards"
+  ],
+  "source": {
+    "workflow": "11archive-publish-report",
+    "originalPath": "testing-practices-r2"
+  },
+  "generator": {
+    "agent": "claude",
+    "skill": "11archive-publish-report"
+  },
+  "access": {
+    "listing": "listed",
+    "indexing": false
+  },
+  "artifacts": {
+    "data": {
+      "path": "data.json",
+      "mimeType": "application/json",
+      "bytes": 59965,
+      "sha256": "sha256:d991711b2051b447350dbd71dbf30863beec5017f74bd67fd2c18309397835f7",
+      "exposure": "hidden"
+    },
+    "markdown": {
+      "path": "report.md",
+      "mimeType": "text/markdown; charset=utf-8",
+      "bytes": 242648,
+      "sha256": "sha256:9bba2f4b58acdc6f3ec7dca55f14f875b0efa6072ec1e9fdaa92e2ff98291c8a",
+      "exposure": "render"
+    },
+    "html": {
+      "path": "report.html",
+      "mimeType": "text/html; charset=utf-8",
+      "bytes": 522906,
+      "sha256": "sha256:7ce29372bfbb43fe564fc0a75f5710427734f2449bd2338c9f2e9868f79f2ebe",
+      "exposure": "sandbox",
+      "execution": "scripts",
+      "network": "none",
+      "allowlist": []
+    }
+  },
+  "digest": "sha256:4552e1b4911e4b8caefee7e3f5e970d2dc298ef1988758bf8972bbeb32936370"
+}
